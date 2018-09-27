@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Кравцов](https://up.htmlacademy.ru/adaptive/15/user/231362).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
