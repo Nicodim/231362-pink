@@ -28,8 +28,8 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="main-form">
-      <header class="form_header">
+    <section class="form">
+      <header class="form__header">
         <h2 class="visually-hidden">Приложение для всех систем</h2>
         <!-- <a class="form__logo">
         <img class="form__logo-image" src="img/image-mobile.svg" width="320" height="462" alt="ПИНК картинка">
@@ -107,13 +107,23 @@
       </fieldset>
       <p>
         <label for="info-text">Опишите свои эмоции</label>
-        <input id="info-text" type="text" name="text"
-        placeholder="Можно прям в красках, не стесняясь в выражениях">
+        <input id="info-text" type="text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
       </p>
-      <button type="submit" class="info-button button">Отправить форму</button>
+      <button type="submit" class="form__button button">Отправить форму</button>
     </form>
     <b>* — обязательные поля</b>
+    <div class="visually-hidden main-form_error error">
+      <h3 class="error__title">Что-то пошло не так!</h3>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="error__button" type="button">OK</button>
+    </div>
+    <div class="visually-hidden main-form_success success">
+      <h3 class="success__title">Ваша заявка отправлена</h3>
+      <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="success__button" type="button">OK</button>
+    </div>
   </section>
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
