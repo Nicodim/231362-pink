@@ -52,6 +52,9 @@
   border-radius: 50%;
   background: rgba(0,0,0,0.3);
 }
+.slider__toggle:hover::after {
+  background: rgba(0,0,0,0.6);
+}
 .slider__toggle--active::after {
   content: "";
   position: absolute;
@@ -61,6 +64,9 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  background: @global-white;
+}
+.slider__toggle--active:hover::after {
   background: @global-white;
 }
 .slider__toggle--active::before {

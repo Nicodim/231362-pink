@@ -1,19 +1,34 @@
 .capabilities {
-  color: @dark-blue;
-  background-color: @global-white;
-  text-align: center;
+color: @dark-blue;
+background-color: @global-white;
+text-align: center;
 }
 .capabilities__block {
-  background-color: @light-gray;
+position: relative;
+background-color: @light-gray;
 }
 .capabilities__list {
-  list-style: none;
+position: relative;
+list-style: none;
+}
+.capabilities__list::after {
+content: "";
+    display: block;
+    bottom: 0;
+    width: 157px;
+    height: 277px;
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/iphone-screen-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 .capabilities__slogan {
-  font-size: 24px;
-  font-weight: 200;
+font-size: 24px;
+font-weight: 200;
 }
 .capabilities__description {
-  font-size: 14px;
-  line-height: 24px;
+font-size: 14px;
+line-height: 24px;
 }
