@@ -3,18 +3,31 @@
   line-height: 24px;
   color: @global-white;
   background-color: @navy-blue;
+  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 258px 286px, cover;
 }
 .offer__download {
   display: block;
   padding-top: 40px;
 }
 .offer__link {
+  display: inline-block;
+  min-width: 281px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+  padding: 18px 35px;
+  color: @global-white;
   font-size: 18px;
   line-height: 18px;
-  color: @global-white;
-  border: 2px solid @global-white;
-  border-radius: 20px;
+  font-weight: 700;
+  border: 3px solid @global-white;
+  border-radius: 40px;
   padding: 10px 37px;
+  margin-top: 28px;
+  cursor: pointer;
+  text-align: center;
+
 }
 .offer__link:hover,
 .offer__link:focus {
