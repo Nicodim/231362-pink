@@ -13,9 +13,13 @@ form {
   min-height: 400px;
 }
 .form__heading {
+  display: block;
   font-size: 24px;
   color: @global-white;
   font-weight: 200;
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
 }
 .form__text {
   display: block;
@@ -34,11 +38,27 @@ form {
   line-height: 18px;
   color: @light-red;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding-top: 40px;
 }
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.form__label {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+  box-sizing: border-box;
+}
+.form__option {
+  width: 300px;
+}
+.form__input {
+  border: 2px solid #e5e5e5;
 }
 .form__option--name {
   padding-bottom: 26px;
@@ -101,7 +121,15 @@ form {
   color: @light-red;
   text-transform: uppercase;
 }
+.form__note {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 .form__button {
+  display: inline-block;
+  padding: 15px 49px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -110,6 +138,7 @@ form {
   text-transform: uppercase;
   background-color: @light-salat;
   border: none;
+  border-radius: 2px;
   margin-bottom: 40px;
   font-weight: bold;
 }
@@ -124,11 +153,12 @@ form {
   color: @light-red;
 }
 .main-form__error {
+  text-align: center;
   background-color: @global-white;
   color: @navy-blue;
   font-size: 14px;
   line-height: 24px;
-  box-shadow: 7px 0 15 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 .error__title {
   font-size: 18px;
@@ -136,6 +166,9 @@ form {
   color: @total-black;
 }
 .error__button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 17px 126px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -155,11 +188,12 @@ form {
   color: rgba(255,255,255,0.3);
 }
 .main-form__success {
+  text-align: center;
   background-color: @global-white;
   color: @navy-blue;
   font-size: 14px;
   line-height: 24px;
-  box-shadow: 7px 0 15 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 .success__title {
   font-size: 18px;
@@ -170,6 +204,9 @@ form {
   background-color: @light-gray;
 }
 .success__button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px 68px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
