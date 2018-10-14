@@ -4,24 +4,29 @@
   font-size: 14px;
   line-height: 30px;
 }
+
 .share__slogan {
   color: @dark-blue;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
 }
+
 .share__option {
   background-color: @light-gray;
 }
+
 .share__image {
   display: block;
   padding: 20px;
 }
+
 .share__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .share__tool-button {
   display: flex;
   align-items: center;
@@ -31,38 +36,47 @@
   font-size: 0;
   border: 0;
   background-color: transparent;
-  fill: rgba(40,56,69,0.3);
+  fill: rgba(40, 56, 69, 0.3);
   cursor: pointer;
 }
+
 .share__tool-svg path {
   fill: rgba(40, 56, 69, 0.3);
 }
+
 .share__tool-svg:hover path,
 .share__tool-svg:focus path {
   fill: rgba(40, 56, 69, 0.5);
 }
+
 .share__tool-svg:active path {
   fill: @light-red;
 }
+
 .share__tool-button:hover,
 .share__tool-button:focus {
-  fill: rgba(40,56,69,0.5);
+  fill: rgba(40, 56, 69, 0.5);
 }
+
 .share__tool-button:active {
   fill: @light-red;
 }
+
 .share__tool-button--active {
   fill: @light-red;
 }
+
 .share__tool-button--active:hover,
 .share__tool-button--active:focus {
   fill: @light-red;
 }
+
 .share__scale {
   position: relative;
   height: 2px;
   background: @dark-blue;
 }
+
 .share__scale::after {
   content: "";
   width: 12px;
@@ -75,40 +89,45 @@
   background-color: @light-gray;
   border-radius: 50%;
 }
+
 .share__scale:active::after {
   width: 14px;
   height: 14px;
   border: none;
-  background-color:@light-red;
+  background-color: @light-red;
 }
+
 .share__button--cansel {
   display: inline-block;
   min-width: 281px;
   font-family: "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
   padding: 18px 35px;
-  color: rgba(40,54,69,0.1);
+  color: rgba(40, 54, 69, 0.1);
   background-color: transparent;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  border: 3px solid rgba(40,54,69,0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 40px;
   margin-top: 28px;
   cursor: pointer;
   text-align: center;
   outline: none;
 }
+
 .share__button--cansel:hover,
 .share__button--cansel:focus {
-  border: 3px solid rgba(40,54,69,0.3);
-  color: rgba(40,54,69,0.3);
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
 }
+
 .share__button--cansel:active {
-  background-color:rgba(40,54,69,0.3);
-  color: rgba(255,255,255,0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
+
 .share__button--active {
   display: inline-block;
   min-width: 281px;
@@ -127,13 +146,15 @@
   text-align: center;
   outline: none;
 }
+
 .share__button--active:hover,
 .share__button--active:focus {
   border: 3px solid @light-red;
   background-color: @light-red;
   color: @global-white;
 }
+
 .share__button--active:active {
-  background-color:@light-red;
-  color: rgba(255,255,255,0.3);
+  background-color: @light-red;
+  color: rgba(255, 255, 255, 0.3);
 }
