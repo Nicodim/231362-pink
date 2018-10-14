@@ -1,4 +1,6 @@
 .rates {
+  width: 320px;
+  margin: 0 auto;
   background-color: @light-gray;
   text-align: center;
 }
@@ -7,6 +9,10 @@
   color: @global-white;
   background-color: @dark-blue;
   text-transform: uppercase;
+}
+
+.rates__list {
+  width: 100%;
 }
 
 .rates__name {
@@ -26,4 +32,23 @@
   line-height: 30px;
   color: @dark-blue;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .rates {
+    width: 640px;
+  }
+  .rates__list {
+    display: flex;
+    width: 640px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .rates {
+    width: 960px;
+  }
+  .rates__list {
+    width: 940px;
+  }
 }

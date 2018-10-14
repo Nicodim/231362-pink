@@ -1,5 +1,6 @@
 .offer {
-  min-height: 400px;
+  width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   color: @global-white;
@@ -8,6 +9,30 @@
   background-repeat: no-repeat;
   background-size: 258px 286px, cover;
   background-position: bottom left, center;
+}
+@media (min-width: @tablet) {
+  .offer {
+    width: 660px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .offer__version {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop) {
+  .offer{
+    width: 940px;
+  }
+
+  .offer__version {
+    width: 370px;
+  }
 }
 
 .offer__download {

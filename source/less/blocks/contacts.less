@@ -1,8 +1,42 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   font-size: 24px;
   color: @dark-blue;
   background-color: @global-white;
   text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .contacts {
+    width: 640px;
+  }
+
+ .contacts__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 640px;
+   justify-content: space-between;
+   margin: 0 auto;
+ }
+  .contacts__list {
+    display: flex;
+     width: 620px;
+     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop) {
+  .contacts {
+    width: 960px;
+  }
+  .contacts__wrapper {
+    width: 960px;
+  }
+  .contacts__list {
+    width: 940px;
+  }
 }
 
 .contacts__slogan {
