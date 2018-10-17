@@ -5,41 +5,14 @@
   line-height: 24px;
   color: @global-white;
   background-color: @navy-blue;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 258px 286px, cover;
-  background-position: bottom left, center;
+
 }
-@media (min-width: @tablet) {
-  .offer {
-    width: 660px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .offer__version {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.offer__title {
+  font-size: 50px;
+  line-height: 50px;
+  color: @global-white;
+  font-weight: 200;
 }
-
-@media (min-width: @desktop) {
-  .offer{
-    width: 940px;
-  }
-
-  .offer__version {
-    width: 370px;
-  }
-}
-
-.offer__download {
-  display: block;
-  padding-top: 40px;
-}
-
 .offer__link {
   display: inline-block;
   min-width: 281px;
@@ -74,8 +47,7 @@
 .version__list {
   list-style: none;
   padding: 0;
-  padding-top: 30px;
-  width: 240px;
+  width: 210px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -84,4 +56,63 @@
 
 .version__link {
   color: @global-white;
+}
+
+.version__description {
+ padding: 0 20px;
+ padding-bottom: 30px;
+}
+
+@media (max-width: @mobile-only) {
+  .offer__img-container {
+    min-height: 460px;
+    min-width: 320px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 258px 286px, cover;
+    background-position: bottom left, center;
+  }
+  .offer__title {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .offer {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 700px 545px, cover;
+    background-position: bottom, center;
+    min-height: 620px;
+    padding-top: 140px;
+
+  }
+.offer__title {
+  display: block;
+}
+  .offer__version {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop) {
+  .offer{
+    width: 940px;
+  }
+
+  .offer__version {
+    width: 370px;
+  }
+}
+
+.offer__download {
+  display: block;
+  padding: 0 20px;
+  margin-bottom: 30px;
 }

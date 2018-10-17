@@ -1,11 +1,11 @@
 .page-header {
   background-color: @navy-blue;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   display: flex;
   flex-direction: column;
+
 }
 
 .header__container {
@@ -19,15 +19,20 @@
   padding: 20px 0;
   padding-left: 20px;
 }
-
-@media (max-width: @mobile-only) {
-
+@media (min-width: @mobile-only) {
+  .header {
+    margin-bottom: -75px;
+  }
 }
 
 @media (min-width: @tablet) {
-  .header__container {
-    height: 110px;
-  }
+   .header {
+     margin-bottom: -110px;
+   }
+
+   .header__container {
+     height: 110px;
+   }
 
   .page-header__logo {
     padding-top: 45px;
