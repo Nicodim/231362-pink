@@ -1,5 +1,9 @@
 .page-header {
   background-color: @navy-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -10,15 +14,38 @@
   padding: 0;
 }
 
+.page-header__logo {
+  display: block;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+@media (max-width: @mobile-only) {
+
+}
+
 @media (min-width: @tablet) {
   .header__container {
     height: 110px;
   }
+
+  .page-header__logo {
+    padding-top: 45px;
+  }
 }
 
 @media (min-width: @desktop) {
+  .page-header__wrapper {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .header__container {
-    height: 110px;
+    width: 150px;
+    background-color: transparent;
   }
 }
 
