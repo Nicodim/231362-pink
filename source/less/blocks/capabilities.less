@@ -5,44 +5,7 @@
   background-color: @global-white;
   text-align: center;
 }
-@media (min-width: @tablet) {
-  .capabilities {
-     width: 660px;
-   }
 
-   .capabilities__wrapper {
-     width: 660px;
-     display: flex;
-     align-items: flex-start;
-   }
-
-   .capabilities__block {
-     width: 310px;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-end;
-     margin-left: auto;
-   }
-}
-
-@media (min-width: @desktop) {
-  .capabilities {
-     width: 940px;
-   }
-   .capabilities__wrapper {
-     width: 940px;
-     flex-direction: row;
-   }
-   .capabilities__block {
-     width: 940px;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     margin-left: 0;
-   }
-}
 .capabilities__wrapper {
   background-color: @light-gray;
 }
@@ -59,7 +22,7 @@
 }
 
 .capabilities__block::after {
-  content: "";
+  content: " ";
   display: block;
   bottom: 0;
   width: 157px;
@@ -72,13 +35,84 @@
   background-position: center top;
 }
 
+.capabilities__title {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .capabilities__slogan {
+  display: block;
   font-size: 24px;
   line-height: 29px;
   font-weight: 200;
+  margin-bottom: 35px;
+}
+
+.capabilities__slogan:last-child {
+  margin-bottom: 45px;
 }
 
 .capabilities__description {
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet) {
+  .capabilities {
+    width: auto;
+  }
+
+  .capabilities__title {
+    width: 620px;
+  }
+
+  .capabilities__slogan {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding-top: 40px;
+
+  }
+  .capabilities__slogan:last-child  {
+    padding: 0 140px;
+  }
+  .capabilities__wrapper {
+    width: 660px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .capabilities__block {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .capabilities {
+    width: 940px;
+  }
+  .capabilities__wrapper {
+    width: 940px;
+    flex-direction: row;
+  }
+  .capabilities__title {
+    width: 820px;
+  }
+  .capabilities__slogan {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .capabilities__block {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0;
+  }
 }
