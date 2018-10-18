@@ -7,23 +7,51 @@
   text-align: center;
 }
 
+.contacts__wrapper {
+  padding-bottom: 45px;
+  margin-bottom: -400px;
+}
+.contacts__slogan {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contacts__list {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.contacts__item {
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+.contacts__map {
+  z-index: -1;
+}
+
 @media (min-width: @tablet) {
   .contacts {
-    width: 640px;
+    width: auto;
   }
 
- .contacts__wrapper {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 640px;
-   justify-content: space-between;
-   margin: 0 auto;
- }
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 640px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
   .contacts__list {
     display: flex;
-     width: 620px;
-     justify-content: space-between;
+    width: 620px;
+    justify-content: space-between;
   }
 }
 
