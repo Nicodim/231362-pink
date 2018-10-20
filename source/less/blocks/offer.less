@@ -82,7 +82,7 @@
     width: auto;
     display: flex;
     align-items: flex-start;
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 700px 545px, cover;
     background-position: bottom, center;
@@ -120,10 +120,12 @@
 
 @media (min-width: @desktop) {
   .offer{
-    width: 940px;
+    width: auto;
+  }
+  .offer__wrapper {
+    width: 962px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
-  .offer__version {
-    width: 370px;
-  }
 }

@@ -49,10 +49,21 @@ height: 230px;
     justify-content: space-between;
     margin: 0 auto;
   }
+
   .contacts__list {
     display: flex;
+    flex-direction: row;
     width: 620px;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  .contacts__item {
+    width: 250px;
+  }
+
+  .contacts__item:last-child {
+    margin: 0 auto;
   }
 }
 
