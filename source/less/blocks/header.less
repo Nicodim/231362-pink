@@ -1,11 +1,10 @@
-.page-header {
-  background-color: @navy-blue;
+.header {
+  background-color: rgba(29, 39, 50, 0.3);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .header__container {
@@ -14,21 +13,26 @@
   padding: 0;
 }
 
+.header__wrapper {
+  position: relative;
+}
+
 .page-header__logo {
   display: block;
   padding: 20px 0;
   padding-left: 20px;
 }
+
 @media (max-width: @mobile-only) {
 
-  .header {
+  .page-header {
     margin-bottom: -75px;
   }
 
 }
 
 @media (min-width: @tablet) {
-   .header {
+   .page-header {
      margin-bottom: -110px;
    }
 
