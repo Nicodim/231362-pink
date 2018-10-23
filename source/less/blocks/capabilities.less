@@ -35,7 +35,7 @@
   background-position: left top;
 }
 
-.capabilities__wr {
+.capabilities__wrapper--slogan {
   width: 280px;
   margin: 0 auto;
 }
@@ -57,13 +57,13 @@
   text-align: left;
 }
 
-.capabilities__bottom h3 {
+.capabilities__bottom--title {
   font-size: 30px;
   line-height: 36px;
   color: @total-black;
   font-weight: 400;
 }
-.capabilities__bottom p {
+.capabilities__bottom--description {
   font-size: 14px;
   line-height: 24px;
   color: inherit;
@@ -93,7 +93,7 @@
     width: auto;
   }
 
-  .capabilities__wr {
+  .capabilities__wrapper--slogan {
     width: 620px;
     margin-bottom: 80px;
   }
@@ -124,6 +124,7 @@
     background-repeat: no-repeat;
     background-position: left top;
   }
+
   .capabilities__list {
     width: 310px;
     display: flex;
@@ -135,11 +136,12 @@
     padding-right: 40px;
     padding-bottom: 45px;
   }
+
   .capabilities__item {
     text-align: left;
   }
 
-  .bottom__wrapper {
+  .capabilities__bottom--wrapper {
     position: relative;
     display: flex;
     width: 310px;
@@ -162,7 +164,7 @@
     padding-bottom: 160px;
     margin-bottom: 0;
   }
-  .capabilities__wr {
+  .capabilities__wrapper--slogan {
     width: 820px;
     margin-bottom: 150px;
   }
@@ -206,6 +208,7 @@
     background-repeat: no-repeat;
     background-position: left top, center top, right top;
   }
+
   .capabilities__description  {
     padding: 0 55px;
   }
@@ -214,35 +217,40 @@
     background-color: @light-gray;
     width: auto;
   }
-  .bottom__wrapper {
+  .capabilities__bottom--wrapper {
     width: 580px;
     margin-bottom: 0;
     margin-right: 10px;
     padding-bottom: 115px;
   }
+
   @media (min-width: @desktop) {
-    .bottom__wrapper {
+    .capabilities__bottom--wrapper {
       width: 940px;
       padding: 0 10px;
       margin: 0 auto;
     }
+
     .bottom__container {
       width: 570px;
       margin-left: auto;
       padding-bottom: 120px;
     }
   }
-  .bottom__wrapper h3 {
+
+  .bottom__title {
     margin: 0;
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
   }
-  .bottom__wrapper h3 br {
+
+  .bottom__title br {
     display: none;
   }
-  .bottom__wrapper p {
+
+  .bottom__description {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 40px;
