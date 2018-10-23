@@ -1,19 +1,58 @@
 .share {
-  background-color: @global-white;
+  background-color: @light-gray;
   color: @dark-blue;
   font-size: 14px;
   line-height: 30px;
 }
 
 .share__slogan {
+  background-color: @global-white;
   color: @dark-blue;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  display: block;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .share__option {
-  background-color: @light-gray;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet) {
+  .share {
+    width: auto;
+  }
+
+  .share__option {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .share__column {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share {
+    background-color: @global-white;
+  }
+
+  .share__option {
+    background-color: @light-gray;
+    width: 820px;
+    padding: 0 60px;
+    padding-top: 20px;
+  }
+
+  .share__column--left {
+    width: 410px;
+  }
 }
 
 .share__image {
@@ -24,7 +63,61 @@
 .share__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media (min-width: @tablet) {
+  .share__list {
+    border-bottom: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .share__tool-item {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .share__range-controls {
+    width: 200px;
+    margin-top: 23px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__tool-item {
+    width: 410px;
+  }
+
+  .share__range-controls {
+    width: 290px;
+  }
+}
+
+.share__button--wrapper {
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: @tablet) {
+  .share__button--wrapper {
+    padding: 0 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__button--wrapper {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .share__tool-button {
@@ -99,9 +192,9 @@
 
 .share__button--cansel {
   display: inline-block;
-  min-width: 281px;
-  font-family: "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
   padding: 18px 35px;
   color: rgba(40, 54, 69, 0.1);
   background-color: transparent;
@@ -110,7 +203,7 @@
   font-weight: 700;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 40px;
-  margin-top: 28px;
+  margin-top: 10px;
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -130,9 +223,9 @@
 
 .share__button--active {
   display: inline-block;
-  min-width: 281px;
-  font-family: "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
   padding: 18px 35px;
   color: @light-red;
   background-color: transparent;
@@ -145,6 +238,14 @@
   cursor: pointer;
   text-align: center;
   outline: none;
+}
+
+@media (min-width: @desktop) {
+  .share__button--active,
+  .share__button--cansel {
+    margin-top: 140px;
+    width: 183px;
+  }
 }
 
 .share__button--active:hover,

@@ -1,4 +1,6 @@
 .comments {
+  width: 320px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   color: @dark-blue;
@@ -6,9 +8,56 @@
 }
 
 .comments__list {
+  padding: 0 10px;
   margin: 0;
-  padding: 0;
-  list-style: none;
+}
+
+@media (min-width: @tablet) {
+  .comments {
+    width: auto;
+  }
+
+  .comments__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .comments__list {
+    padding: 0;
+  }
+
+  .comments__title {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop) {
+  .comments {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .comments__wrapper {
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .comments__list {
+    width: 640px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .comments__item {
+    padding: 0 20px;
+  }
+
+  .comments__toggles {
+    display: none;
+  }
 }
 
 .comments__item {
