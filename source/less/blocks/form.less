@@ -26,6 +26,7 @@
     padding: 0 20px;
     margin: 0 auto;
   }
+
   .form__box {
     width: 620px;
     display: flex;
@@ -39,6 +40,7 @@
     width: 960px;
     padding: 0 10px;
   }
+
   .form__box {
     width: 940px;
     flex-direction: row;
@@ -82,11 +84,13 @@
   padding: 50px 20px;
   text-align: center;
 }
+
 @media (max-width: @mobile-only) {
   .form__text--hidden {
     display: none;
   }
 }
+
 @media (min-width: @tablet) {
   .form__text {
     padding: 50px 120px;
@@ -98,6 +102,7 @@
   margin: 0;
   padding: 0;
 }
+
 .form__fieldset--radio {
   background-color: @light-gray;
 }
@@ -111,28 +116,34 @@
     border: 2px solid #e5e5e5;
     margin-bottom: 65px;
   }
+
   .form__fieldset--name, .form__fieldset--data {
     border: none;
   }
+
   .form__fieldset--name {
     order: 1;
   }
+
   .form__fieldset--radio {
     background-color: @global-white;
     order: 2;
-
   }
+
   .form__fieldset--data {
     order: 3;
   }
+
   .form__fieldset--checkbox {
     background-color: @global-white;
     order: 4;
   }
+
   .form__fieldset--emotions {
     order: 5;
   }
 }
+
 @media (min-width: @desktop) {
   .form__fieldset {
     margin-bottom: 60px;
@@ -167,6 +178,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 @media (min-width: @tablet) {
   .form__list {
     width: 620px;
@@ -174,23 +186,28 @@
     flex-direction: column;
   }
 }
+
 @media (min-width: @desktop) {
   .form__list {
     width: 940px;
   }
+
   .form__list--name, .form__list--radio {
     width: 465px;
   }
+
   .form__list--data, .form__list--checkbox {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
+
 .form__option {
   width: 280px;
   margin: 0;
   margin-bottom: 10px;
 }
+
 @media (min-width: @tablet) {
   .form__option {
     width: 620px;
@@ -199,16 +216,20 @@
     margin-bottom: 50px;
   }
 }
+
 @media (min-width: @desktop) {
   .form__option--name  {
     width: 435px;
   }
+
   .form__option--radio  {
     width: 300px;
   }
+
   .form__option--data {
     width: 375px;
   }
+
   .form__option--checkbox {
     width: 260px;
   }
@@ -237,6 +258,7 @@
   padding-right: 15px;
   padding-bottom: 18px;
 }
+
 @media (min-width: @tablet) {
   .form__option input {
     flex-grow: 1;
@@ -333,15 +355,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .form__note {
     padding-top: 15px;
   }
 }
+
 @media (min-width: @desktop) {
   .form__submit {
     width: 940px;
   }
 }
+
 .main-form__error {
   text-align: center;
   background-color: @global-white;

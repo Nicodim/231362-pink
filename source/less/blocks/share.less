@@ -19,6 +19,7 @@
 .share__option {
   margin-bottom: 40px;
 }
+
 @media (min-width: @tablet) {
   .share {
     width: auto;
@@ -31,20 +32,24 @@
     justify-content: space-between;
     margin: 0 auto;
   }
+
   .share__column {
     width: 300px;
   }
 }
+
 @media (min-width: @desktop) {
   .share {
     background-color: @global-white;
   }
+
   .share__option {
     background-color: @light-gray;
     width: 820px;
     padding: 0 60px;
     padding-top: 20px;
   }
+
   .share__column--left {
     width: 410px;
   }
@@ -62,6 +67,7 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 @media (min-width: @tablet) {
   .share__list {
     border-bottom: none;
@@ -83,24 +89,29 @@
     margin-right: 25px;
   }
 }
+
 @media (min-width: @desktop) {
-.share__tool-item {
-  width: 410px;
+  .share__tool-item {
+    width: 410px;
+  }
+
+  .share__range-controls {
+    width: 290px;
+  }
 }
-.share__range-controls {
-  width: 290px;
-}
-}
+
 .share__button--wrapper {
   padding: 0 20px;
   padding-bottom: 40px;
 }
+
 @media (min-width: @tablet) {
   .share__button--wrapper {
     padding: 0 10px;
     padding-bottom: 40px;
   }
 }
+
 @media (min-width: @desktop) {
   .share__button--wrapper {
     width: 410px;
@@ -234,8 +245,8 @@
     margin-top: 140px;
     width: 183px;
   }
-
 }
+
 .share__button--active:hover,
 .share__button--active:focus {
   border: 3px solid @light-red;

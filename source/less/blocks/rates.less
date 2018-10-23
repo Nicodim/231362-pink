@@ -4,6 +4,7 @@
   text-align: center;
   margin-bottom: 45px;
 }
+
 @media (min-width: @tablet) {
   width: auto;
 }
@@ -23,6 +24,7 @@
     padding-bottom: 65px;
   }
 }
+
 @media (min-width: @desktop) {
   .rates__wrapper {
     width: 100%;
@@ -30,11 +32,13 @@
     padding-bottom: 90px;
   }
 }
-.rates__table  {
+
+.rates__table {
   margin: 0 auto;
   background-color: #ffffff;
   border-collapse: collapse;
 }
+
 @media (min-width: @desktop) {
   .rates__table {
     margin-top: 60px;
@@ -68,6 +72,7 @@
     padding: 18px 70px;
   }
 }
+
 .rates__name {
   font-size: 18px;
   line-height: 30px;
@@ -75,6 +80,7 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+
 @media (min-width: @tablet) {
   .rates__name {
     font-size: 16px;
@@ -88,16 +94,19 @@
   text-transform: uppercase;
   font-weight: 300;
 }
+
 @media (min-width: @tablet) {
   .rates__cost {
     font-size: 18px;
   }
 }
+
 @media (min-width: @desktop) {
   .rates__cost {
     font-size: 24px;
   }
 }
+
 .rates__header--best {
   position: relative;
 
@@ -128,6 +137,7 @@
     }
   }
 }
+
 .rates__hit {
   position: absolute;
   top: 11px;
@@ -140,12 +150,14 @@
   font-weight: 300;
   z-index: 50;
 }
+
 @media (min-width: @tablet) {
   .rates__hit {
     top: 4px;
     left: 8px;
   }
 }
+
 @media (min-width: @desktop) {
   .rates__hit {
     top: 2px;
@@ -154,6 +166,7 @@
     height: 73px;
   }
 }
+
 .rates__cell {
   box-sizing: border-box;
   position: relative;
@@ -167,6 +180,7 @@
   color: @dark-blue;
   text-transform: uppercase;
 }
+
 @media (min-width: @tablet) {
   .rates__cell {
     height: 45px;
@@ -174,6 +188,7 @@
     text-transform: none;
   }
 }
+
 @media (min-width: @desktop) {
   .rates__cell {
     height: 59px;
@@ -181,6 +196,7 @@
     padding: 15px 40px;
   }
 }
+
 .rates__cell--on::before {
   content: "";
   display: block;
@@ -246,9 +262,11 @@
     border: none;
     height: 61px;
   }
+
   .rates__table--base {
     transform: translateX(0);
   }
+
   .rates__table--base .rates__cell:first-of-type {
     transform: translateX(-20px);
   }
@@ -269,6 +287,7 @@
     position: absolute;
     transform: translateX(536px);
   }
+
   .rates__cell--on::before {
     left: 243px;
   }
@@ -278,11 +297,13 @@
     transform: translate(-50%, -50%);
   }
 }
+
 .rates__toggles {
   display: flex;
   justify-content: center;
   padding: 40px 0;
 }
+
 @media (min-width: @tablet) {
   .rates__toggles {
     display: none;
