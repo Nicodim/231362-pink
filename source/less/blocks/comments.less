@@ -155,7 +155,7 @@
   .comments {
     width: auto;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 124px;
   }
 
   .comments__wrapper {
@@ -164,14 +164,61 @@
   }
 
   .comments__list {
-    width: 640px;
+    width: 730px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
+    position: relative;
+  }
+
+  .comments__list::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 28px;
+    left: -105px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+  .comments__list::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 28px;
+    right: -105px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
   }
 
   .comments__item {
     padding: 0 20px;
+    position: relative;
+  }
+
+  .comments__item::before {
+    content: "";
+    position: absolute;
+    width: 77px;
+    height: 64px;
+    top: -113px;
+    left: 327px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  .comments__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .comments__title--age {
+    font-size: 19px;
+    line-height: 27px;
   }
 
   .comments__toggles {
