@@ -9,6 +9,18 @@
 
 .contacts__wrapper {
   padding-bottom: 45px;
+  position: relative;
+}
+.contacts__wrapper::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 62px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
+  top: 389px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__slogan {
