@@ -1,8 +1,8 @@
 .page-footer {
-
   font-size: 14px;
   line-height: 18px;
   color: @dark-blue;
+  margin-top: 100px;
 }
 
 @media (max-width: @mobile-only) {
@@ -12,7 +12,6 @@
 }
 
 .page-footer__wrapper {
-  min-height: 200px;
   flex-wrap: wrap;
   margin: 0 auto;
   display: flex;
@@ -22,6 +21,11 @@
 }
 
 @media (min-width: @tablet) {
+  .page-footer {
+    width: auto;
+    margin-top: 30px;
+  }
+
   .page-footer__wrapper {
     width: 640px;
     padding: 0 20px;
@@ -55,6 +59,12 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: @desktop) {
+  .social__list {
+    margin-right: 15px;
+  }
 }
 
 .social__link {
@@ -99,13 +109,16 @@
 
 @media (min-width: @tablet) {
   .copyright__text {
-    padding-left: 20px;
+    padding-left: 1px;
+    padding-top: 17px;
   }
 }
 
 .copyright__link {
   width: 28px;
   height: 36px;
+  padding-right: 19px;
+  padding-top: 16px;
   fill: @light-red;
 }
 
