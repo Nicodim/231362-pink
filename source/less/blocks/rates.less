@@ -21,13 +21,34 @@
 }
 
 @media (min-width: @tablet) {
-  .rates  { width: auto;
+  .rates {
+    width: auto;
+  }
+
+  .rates::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 660px;
+    height: 80px;
+    background: url("../img/bg-triangle-white.svg") no-repeat top center;
+    fill: @light-gray;
+    transform: rotate(180deg);
+    top: -49px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @desktop) {
   .rates {
     margin-bottom: 70px;
+  }
+
+  .rates::before {
+    width: 1200px;
+    height: 95px;
+    top: -95px;
   }
 }
 
