@@ -23,8 +23,16 @@
 }
 
 @media (min-width: @tablet) {
+
   .share {
     width: auto;
+  }
+
+  .share__slogan {
+    font-size: 18px;
+    padding-right: 22px;
+    padding-top: 52px;
+    padding-bottom: 69px;
   }
 
   .share__option {
@@ -64,13 +72,42 @@
 
 .share__list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
-  padding: 0 20px;
-  padding-bottom: 30px;
+  padding: 0 36px;
+  padding-bottom: 36px;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.share__tool-item .share__range-controls {
+  display: none;
+}
+
+@media (max-width: @mobile-only) {
+  .share__tool-button {
+    margin-bottom: 27px;
+    position: relative;
+  }
+
+  .share__tool-item--active .share__range-controls {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 240px;
+    right: 43px;
+  }
+}
+
 @media (min-width: @tablet) {
+
+  .share__image {
+    display: block;
+    padding: 0;
+    padding-top: 57px;
+  }
+
   .share__list {
     border-bottom: none;
     margin-top: 20px;
@@ -197,7 +234,7 @@
   box-sizing: border-box;
   width: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding: 18px 35px;
+  padding: 16px 35px;
   color: rgba(40, 54, 69, 0.1);
   background-color: transparent;
   font-size: 18px;
@@ -205,7 +242,7 @@
   font-weight: 700;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 40px;
-  margin-top: 12px;
+  margin-top: 11px;
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -228,7 +265,7 @@
   box-sizing: border-box;
   width: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
-  padding: 18px 35px;
+  padding: 16px 35px;
   color: @light-red;
   background-color: transparent;
   font-size: 18px;
@@ -236,7 +273,7 @@
   font-weight: 700;
   border: 3px solid @light-red;
   border-radius: 40px;
-  margin-top: 28px;
+  margin-top: 37px;
   cursor: pointer;
   text-align: center;
   outline: none;
