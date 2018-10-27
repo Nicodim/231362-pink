@@ -8,9 +8,13 @@
 }
 
 .header__container {
-  height: 70px;
+  height: 60px;
   background-color: rgba(29, 39, 50, 0.3);
   padding: 0;
+}
+
+.header__container--opened {
+  background-color: @dark-blue;
 }
 
 .header__wrapper {
@@ -19,13 +23,13 @@
 
 .header__logo {
   display: block;
-  padding: 24px 0;
-  padding-left: 20px;
+  padding: 22px 0;
+  padding-left: 17px;
 }
 
 @media (max-width: @mobile-only) {
   .header {
-    margin-bottom: -64px;
+    margin-bottom: -75px;
   }
 
   .header__logo--tablet,

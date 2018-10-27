@@ -5,6 +5,7 @@
   line-height: 30px;
 }
 
+
 @media (min-width: @tablet) {
   .catalog {
     width: auto;
@@ -60,7 +61,10 @@
 
 .catalog__slogan--inner {
   display: block;
-  padding: 50px 20px;
+  padding-top: 29px;
+  padding-left: 30px;
+  padding-right: 41px;
+  padding-bottom: 49px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
@@ -81,6 +85,14 @@
   }
 }
 
+.catalog__item-image {
+ position: relative;
+ height: 176px;
+ margin: 0;
+ line-height: 0;
+ text-align: center;
+ overflow: hidden;
+}
 .catalog__list {
   list-style: none;
   margin: 0;
@@ -105,18 +117,21 @@
 .catalog__item {
   background-color: @light-gray;
   margin: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 0;
 }
 
 .catalog__info-page {
   background-color: @light-gray;
   padding: 0;
+  padding-top: 7px;
+  padding-left: 13px;
 }
 
 .catalog__item--panorama {
   margin: 0 20px;
   background-color: @global-white;
+  margin-bottom: 23px;
 }
 
 @media (min-width: @tablet) {
@@ -136,7 +151,7 @@
 
   .catalog__image--panorama {
     display: block;
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -149,9 +164,22 @@
 }
 
 .catalog__description--time {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
   color: @dark-blue;
+}
+
+.catalog__like-quantity {
+  display: block;
+  width: 120px;
+  margin: 0;
+  padding-left: 26px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  font-size: 12px;
+  line-height: 24px;
+  color: @light-red;
+  text-transform: uppercase;
 }
 
 .user-photo__like-btn {
@@ -161,16 +189,11 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  padding: 0 5px;
+  padding-right: 0px;
 }
 
 .user-photo__like-count {
-  font-size: 12px;
-  line-height: 24px;
-  color: @light-red;
-  text-transform: uppercase;
-}
-
-.catalog__like-quantity {
   font-size: 12px;
   line-height: 24px;
   color: @light-red;
