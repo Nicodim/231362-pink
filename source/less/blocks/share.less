@@ -4,7 +4,8 @@
   font-size: 14px;
   line-height: 30px;
 }
- .share__slogan {
+
+.share__slogan {
   background-color: @global-white;
   color: @dark-blue;
   font-size: 14px;
@@ -16,56 +17,67 @@
   padding-bottom: 43px;
   text-align: center;
 }
- .share__option {
+
+.share__option {
   margin-bottom: 40px;
 }
- @media (min-width: @tablet) {
-   .share {
+
+@media (min-width: @tablet) {
+  .share {
     width: auto;
   }
-   .share__slogan {
+  .share__slogan {
     font-size: 18px;
     padding-right: 22px;
     padding-top: 52px;
     padding-bottom: 69px;
   }
-   .share__option {
+  .share__option {
     width: 620px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
   }
-   .share__column {
+  .share__column {
     width: 300px;
   }
 }
- @media (min-width: @desktop) {
+@media (min-width: @desktop) {
   .share {
     background-color: @global-white;
   }
-   .share__option {
+
+  .share__slogan {
+    padding-top: 9px;
+    padding-bottom: 66px;
+
+  }
+
+  .share__option {
     background-color: @light-gray;
     width: 820px;
     padding: 0 60px;
     padding-top: 20px;
   }
-   .share__column--left {
+  .share__column--left {
     width: 410px;
+    display: flex;
+    flex-direction: column;
   }
 }
- .share__image {
+.share__image {
   display: block;
   padding: 20px;
 }
 
- @media (max-width: @mobile-only) {
-   .share__settings--filters {
+@media (max-width: @mobile-only) {
+  .share__settings--filters {
     width: 320px;
     margin: 0 auto;
-   }
+  }
 
-   .share__list {
+  .share__list {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -76,14 +88,14 @@
     border-bottom: 1px solid #e5e5e5;
   }
 
-   .share__tool-item .share__range-controls {
+  .share__tool-item .share__range-controls {
     display: none;
   }
   .share__tool-button {
     margin-bottom: 27px;
     position: relative;
   }
-   .share__tool-item--active .share__range-controls {
+  .share__tool-item--active .share__range-controls {
     content: "";
     display: block;
     position: absolute;
@@ -91,56 +103,72 @@
 
   }
 }
- @media (min-width: @tablet) {
-   .share__image {
+@media (min-width: @tablet) {
+  .share__image {
     display: block;
     padding: 0;
     padding-top: 57px;
   }
-   .share__list {
+  .share__list {
     border-bottom: none;
     margin-top: 20px;
     padding: 0;
   }
-   .share__tool-item {
+
+  .share__tool-item {
     width: 300px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
   }
-   .share__range-controls {
-    width: 200px;
-    margin-top: 23px;
-    margin-right: 25px;
+
+  .share__range-controls {
+    width: 300px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+    margin-right: 29px;
   }
 }
- @media (min-width: @desktop) {
+@media (min-width: @desktop) {
+  .share__column--img {
+    margin-left: 21px;
+  }
+
+  .share__image {
+    padding-top: 37px;
+  }
+
   .share__tool-item {
     width: 410px;
+    margin-bottom:2px;
   }
-   .share__range-controls {
+  .share__range-controls {
     width: 290px;
+    margin-bottom: 34px;
+    margin-top: 34px;
   }
 }
- .share__button--wrapper {
+.share__button--wrapper {
   padding: 0 20px;
   padding-bottom: 40px;
 }
- @media (min-width: @tablet) {
+@media (min-width: @tablet) {
   .share__button--wrapper {
     padding: 0 10px;
     padding-bottom: 40px;
   }
 }
- @media (min-width: @desktop) {
+@media (min-width: @desktop) {
   .share__button--wrapper {
     width: 410px;
     display: flex;
     justify-content: space-between;
+    padding: 0px 2px;
+    padding-bottom: 46px;
   }
 }
- .share__tool-button {
+.share__tool-button {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -152,36 +180,36 @@
   fill: rgba(40, 56, 69, 0.3);
   cursor: pointer;
 }
- .share__tool-svg path {
+.share__tool-svg path {
   fill: rgba(40, 56, 69, 0.3);
 }
- .share__tool-svg:hover path,
+.share__tool-svg:hover path,
 .share__tool-svg:focus path {
   fill: rgba(40, 56, 69, 0.5);
 }
- .share__tool-svg:active path {
+.share__tool-svg:active path {
   fill: @light-red;
 }
- .share__tool-button:hover,
+.share__tool-button:hover,
 .share__tool-button:focus {
   fill: rgba(40, 56, 69, 0.5);
 }
- .share__tool-button:active {
+.share__tool-button:active {
   fill: @light-red;
 }
- .share__tool-button--active {
+.share__tool-button--active {
   fill: @light-red;
 }
- .share__tool-button--active:hover,
+.share__tool-button--active:hover,
 .share__tool-button--active:focus {
   fill: @light-red;
 }
- .share__scale {
+.share__scale {
   position: relative;
   height: 2px;
   background: @dark-blue;
 }
- .share__scale::after {
+.share__scale::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -193,13 +221,13 @@
   background-color: @light-gray;
   border-radius: 50%;
 }
- .share__scale:active::after {
+.share__scale:active::after {
   width: 14px;
   height: 14px;
   border: none;
   background-color: @light-red;
 }
- .share__button--cansel {
+.share__button--cansel {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -217,17 +245,17 @@
   text-align: center;
   outline: none;
 }
- .share__button--cansel:hover,
+.share__button--cansel:hover,
 .share__button--cansel:focus {
   border: 3px solid rgba(40, 54, 69, 0.3);
   color: rgba(40, 54, 69, 0.3);
 }
- .share__button--cansel:active {
+.share__button--cansel:active {
   background-color: rgba(40, 54, 69, 0.3);
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
- .share__button--active {
+.share__button--active {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
@@ -245,20 +273,20 @@
   text-align: center;
   outline: none;
 }
- @media (min-width: @desktop) {
+@media (min-width: @desktop) {
   .share__button--active,
   .share__button--cansel {
     margin-top: 140px;
     width: 183px;
   }
 }
- .share__button--active:hover,
+.share__button--active:hover,
 .share__button--active:focus {
   border: 3px solid @light-red;
   background-color: @light-red;
   color: @global-white;
 }
- .share__button--active:active {
+.share__button--active:active {
   background-color: @light-red;
   color: rgba(255, 255, 255, 0.3);
 }
