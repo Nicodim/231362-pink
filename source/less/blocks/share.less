@@ -29,7 +29,7 @@
   .share__slogan {
     font-size: 18px;
     padding-right: 22px;
-    padding-top: 52px;
+    padding-top: 45px;
     padding-bottom: 69px;
   }
   .share__option {
@@ -38,11 +38,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    padding-bottom: 43px;
   }
+
   .share__column {
     width: 300px;
   }
+
+  .share__column--left {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 @media (min-width: @desktop) {
   .share {
     background-color: @global-white;
@@ -60,6 +68,7 @@
     padding: 0 60px;
     padding-top: 20px;
   }
+
   .share__column--left {
     width: 410px;
     display: flex;
@@ -116,18 +125,21 @@
   }
 
   .share__tool-item {
-    width: 300px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-left: 20px;
     border-bottom: 1px solid #e5e5e5;
   }
 
+.share__tool-item:first-child {
+  padding-top: 22px;
+}
   .share__range-controls {
     width: 300px;
     margin-bottom: 34px;
     margin-top: 34px;
-    margin-right: 29px;
+    margin-right: 18px;
   }
 }
 @media (min-width: @desktop) {
@@ -156,7 +168,9 @@
 @media (min-width: @tablet) {
   .share__button--wrapper {
     padding: 0 10px;
-    padding-bottom: 40px;
+    margin-top: auto;
+    width: 260px;
+    margin-left: 18px;
   }
 }
 @media (min-width: @desktop) {
@@ -180,35 +194,44 @@
   fill: rgba(40, 56, 69, 0.3);
   cursor: pointer;
 }
+
 .share__tool-svg path {
   fill: rgba(40, 56, 69, 0.3);
 }
+
 .share__tool-svg:hover path,
 .share__tool-svg:focus path {
   fill: rgba(40, 56, 69, 0.5);
 }
+
 .share__tool-svg:active path {
   fill: @light-red;
 }
+
 .share__tool-button:hover,
 .share__tool-button:focus {
   fill: rgba(40, 56, 69, 0.5);
 }
+
 .share__tool-button:active {
   fill: @light-red;
 }
+
 .share__tool-button--active {
   fill: @light-red;
 }
+
 .share__tool-button--active:hover,
 .share__tool-button--active:focus {
   fill: @light-red;
 }
+
 .share__scale {
   position: relative;
   height: 2px;
   background: @dark-blue;
 }
+
 .share__scale::after {
   content: "";
   width: 12px;
@@ -273,13 +296,32 @@
   text-align: center;
   outline: none;
 }
+@media (min-width: @tablet) {
+  .share__tool-button-svg {
+    width: 28px;
+    height: 28px;
+  }
+  .share__tool-svg {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+
 @media (min-width: @desktop) {
+  .share__tool-svg {
+    width: 48px;
+    height: 48px;
+  }
+
   .share__button--active,
   .share__button--cansel {
     margin-top: 140px;
     width: 183px;
   }
+
 }
+
 .share__button--active:hover,
 .share__button--active:focus {
   border: 3px solid @light-red;
