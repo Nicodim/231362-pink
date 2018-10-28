@@ -125,6 +125,12 @@
     opacity: 0.2;
   }
 
+.comments__list:hover::before {
+  opacity: 1;
+}
+.comments__list:active::before {
+  opacity: 0.1;
+}
   .comments__list::after {
     content: "";
     position: absolute;
@@ -135,6 +141,14 @@
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
+  }
+
+  .comments__list:hover::after {
+    opacity: 1;
+  }
+
+  .comments__list:active::after {
+    opacity: 0.1;
   }
 
   .comments__item {
