@@ -96,7 +96,7 @@
   .comments {
     width: auto;
     margin: 0 auto;
-    padding-bottom: 17px
+    padding-bottom: 17px;
   }
 
   .comments__wrapper {
@@ -125,12 +125,14 @@
     opacity: 0.2;
   }
 
-.comments__list:hover::before {
-  opacity: 1;
-}
-.comments__list:active::before {
-  opacity: 0.1;
-}
+  .comments__list:hover::before {
+    opacity: 1;
+  }
+
+  .comments__list:active::before {
+    opacity: 0.1;
+  }
+
   .comments__list::after {
     content: "";
     position: absolute;
