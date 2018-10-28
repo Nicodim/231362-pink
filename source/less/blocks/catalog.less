@@ -48,7 +48,6 @@
   text-align: center;
   padding: 100px 20px;
 }
-
 @media (min-width: @tablet) {
   .catalog__slogan {
     font-size: 50px;
@@ -91,6 +90,30 @@
   }
 }
 
+.catalog__panorama {
+  position: relative;
+}
+
+.catalog__panorama::before {
+  content: "ПАНОРАМА ДНЯ";
+  position: absolute;
+  top: 0;
+  left: 155px;
+  z-index: 2;
+  width: 101px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: @global-white;
+  text-transform: uppercase;
+  background-color: @light-red;
+}
+
 .catalog__item-image {
   position: relative;
   height: 176px;
@@ -115,6 +138,11 @@
 }
 
 @media (min-width: @tablet) {
+  .catalog__panorama::before {
+    top: 56px;
+    left: 499px;
+  }
+
   .catalog__list {
     width: 620px;
     display: flex;
@@ -124,6 +152,11 @@
 }
 
 @media (min-width: @desktop) {
+  .catalog__panorama::before {
+    top: 55px;
+    left: 811px;
+  }
+
   .catalog__list {
     width: 940px;
   }
@@ -265,14 +298,25 @@
 }
 
 .user-photo__like-btn {
+  position: relative;
   font-size: 12px;
   line-height: 24px;
   color: @light-red;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  padding: 0 10px;
-  padding-right: 0px;
+  padding: 0;
+  padding-left: 6px;
+}
+.user-photo__like-btn::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  top: 7px;
+  right: 87px;
 }
 
 .user-photo__like-count {
@@ -305,8 +349,22 @@
     padding-right: 20px;
   }
 
+  .catalog__item--panorama .user-photo__like-btn {
+    padding-left: 11px;
+  }
+
+  .catalog__item--panorama .user-photo__like-btn::before {
+    top: 5px;
+    right: -51px;
+  }
+
   .user-photo__like-btn {
     padding: 0;
+  }
+
+  .user-photo__like-btn::before {
+    top: 5px;
+    right: -172px;
   }
 }
 @media (min-width: @desktop) {
@@ -314,6 +372,7 @@
   .catalog__like-quantity {
     padding-bottom: 21px;
   }
+
   .user-photo__like-btn {
     padding: 0;
   }

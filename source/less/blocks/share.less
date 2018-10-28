@@ -114,9 +114,12 @@
 }
 @media (min-width: @tablet) {
   .share__image {
+    position: relative;
     display: block;
     padding: 0;
     padding-top: 57px;
+    overflow: hidden;
+    height: auto;
   }
   .share__list {
     border-bottom: none;
@@ -151,14 +154,20 @@
     padding-top: 37px;
   }
 
+  .share__tool-item:first-child {
+    padding-top: 3px;
+  }
+
   .share__tool-item {
     width: 410px;
-    margin-bottom:2px;
+    margin: 0;
   }
+
   .share__range-controls {
-    width: 290px;
+    width: 300px;
     margin-bottom: 34px;
     margin-top: 34px;
+    margin-right: 29px;
   }
 }
 .share__button--wrapper {
@@ -180,8 +189,10 @@
     justify-content: space-between;
     padding: 0px 2px;
     padding-bottom: 46px;
+    margin-left: 0;
   }
 }
+
 .share__tool-button {
   display: flex;
   align-items: center;
@@ -296,22 +307,31 @@
   text-align: center;
   outline: none;
 }
+
 @media (min-width: @tablet) {
   .share__tool-button-svg {
     width: 28px;
     height: 28px;
   }
+
   .share__tool-svg {
     width: 30px;
     height: 16px;
   }
 }
 
-
 @media (min-width: @desktop) {
+  .share__tool-button {
+    padding: 0;
+  }
+  .share__tool-button-svg {
+    width: 46px;
+    height: 45px;
+  }
+
   .share__tool-svg {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 33px;
   }
 
   .share__button--active,
