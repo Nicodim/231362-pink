@@ -85,6 +85,7 @@
 .form__fieldset--desktop {
   display: none;
 }
+
 .form__fieldset--radio {
   background-color: @light-gray;
   padding-bottom: 45px;
@@ -99,6 +100,7 @@
 .form__fieldset--emotions {
   margin-bottom: 40px;
 }
+
 @media (min-width: @tablet) {
   .form__fieldset {
     border: 2px solid #e5e5e5;
@@ -139,7 +141,7 @@
 
   .form__fieldset--emotions {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
 
   .form__fieldset--name {
@@ -149,6 +151,7 @@
 
   .form__fieldset--radio {
     width: 420px;
+    padding-bottom: 0;
   }
   .form__fieldset--checkbox {
     padding: 0;
@@ -248,7 +251,8 @@
 @media (min-width: @desktop) {
   .form__fieldset--wrapper {
     width: 900px;
-    padding: 0 20px;
+    padding: 0 15px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,19 +283,22 @@
   }
 
   .form__list--checkbox {
-    width: 260px;
+    width: 200px;
+    margin-bottom: 45px;
+    padding-top: 47px;
+    padding-left: 95px;
   }
 
   .form__list--data {
     width: 820px;
     padding-top: 7px;
     padding-bottom: 12px;
-    padding-left: 59px;
+    padding-left: 52px;
     padding-right: 59px;
   }
 
   .form__list--checkbox:last-child {
-    margin: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -403,6 +410,14 @@
     padding: 0;
     padding-top: 28px;
   }
+  .form__option--data:last-child {
+    padding-top: 28px;
+  }
+
+  .form__option--data:last-child::before  {
+    top: 28px;
+    right: -2px;
+  }
 
   .form__option--checkbox {
     width: 260px;
@@ -432,8 +447,8 @@
   .form__option--mail::after {
     content: "";
     position: absolute;
-    top: 49px;
-    right: 23px;
+    top: 51px;
+    right: 20px;
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-mail.svg");
@@ -509,6 +524,10 @@
     line-height: 30px;
     padding-left: 76px;
   }
+
+  .form__option--data label {
+    padding-bottom: 2px;
+  }
 }
 
 .form__option input {
@@ -533,6 +552,14 @@
   border: 2px solid #e5e5e5;
 }
 
+.form__input:hover {
+  border: 2px solid @total-black;
+}
+
+.form__input:active {
+  border: 2px solid @light-red;
+  outline: none;
+}
 .form__input--checkbox + label::before {
   content: "";
   position: absolute;
@@ -542,6 +569,13 @@
   height: 36px;
   background-color: @global-white;
   border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.form__input--checkbox:hover + label::before {
+  border: 2px solid @total-black;
+}
+.form__input--checkbox:active + label::before {
+  border: 2px solid @light-red;
 }
 
 .form__input--checkbox:checked + label::after {
@@ -564,6 +598,14 @@
   background-color: @global-white;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.form__input--radio:hover + label::before {
+  border: 2px solid @total-black;
+}
+
+.form__input--radio:active + label::before {
+  border: 2px solid @light-red;
 }
 
 .form__input--radio:checked + label::after {
@@ -599,6 +641,11 @@
 }
 
 @media (min-width: @desktop) {
+
+  .form__input--checkbox + label::before {
+    top: -4px;
+    left: -61px;
+  }
   .form__input--radio + label::before {
     content: "";
     position: absolute;
@@ -620,6 +667,11 @@
     top: 7px;
     background-color: @light-red;
     border-radius: 50%;
+  }
+
+  .form__input--checkbox:checked + label::after {
+    left: -48px;
+    top: 6px;
   }
 }
 
@@ -697,14 +749,15 @@
 
 @media (min-width: @desktop) {
   .form__textarea {
-    width: 817px;
+    width: 780px;
     min-height: 44px;
-    padding-bottom: 79px;
+    padding-bottom: 48px;
     margin-left: 55px;
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 34px;
-    text-align: center;
-    font-size: 14px;
+    text-align: left;
+    font-size: 19px;
+    margin-right: 61px;
   }
 }
 
@@ -779,18 +832,19 @@
 
 @media (min-width: @desktop) {
   .form__submit {
-    width: 940px;
+    width: 952px;
     margin: 0 auto;
   }
 
   .form__note {
     display: block;
-    width: 308px;
+    padding-top: 16px;
+    margin-right: 12px;
   }
+}
 
-  .form__note--desktop {
-    display: inline;
-  }
+.form__note--desktop {
+  display: inline;
 }
 
 .main-form__error,
