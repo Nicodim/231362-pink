@@ -59,7 +59,7 @@
           </svg>
         </a>
       </div>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -107,7 +107,8 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox">
               <legend class="form__legend form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form__list form__list--checkbox">
+              <div class="form__fieldset--wrapper form__list--checkbox">
+                <ul class="form__list form__list--checkbox">
                 <li class="form__option form__option--checkbox">
                   <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Сделал селфи с акулой" id="filter-shark" checked>
                   <label class="form__label form__label--checkbox" for="filter-shark">Сделал селфи с акулой</label>
@@ -116,6 +117,8 @@
                   <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="beach" id="filter-beach" checked>
                   <label class="form__label form__label--checkbox" for="filter-beach">Обгорел на пляже</label>
                 </li>
+              </ul>
+              <ul class="form__list form__list--checkbox">
                 <li class="form__option form__option--checkbox">
                   <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="chack" id="filter-chack">
                   <label class="form__label form__label--checkbox" for="filter-chack">Видел Чака Норриса</label>
@@ -124,6 +127,8 @@
                   <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Накупил сувениров" id="filter-souvenirs">
                   <label class="form__label form__label--checkbox" for="filter-souvenirs">Накупил сувениров</label>
                 </li>
+              </ul>
+              <ul class="form__list form__list--checkbox">
                 <li class="form__option form__option--checkbox">
                   <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Удержал башню" id="filter-tower" checked>
                   <label class="form__label form__label--checkbox" for="filter-tower">Удержал башню</label>
@@ -133,38 +138,8 @@
                   <label class="form__label form__label--checkbox" for="filter-hotel">Разгромил отель</label>
                 </li>
               </ul>
+              </div>
             </fieldset>
-
-            <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--desktop">
-              <legend class="form__legend form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form__list form__list--checkbox">
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Сделал селфи с акулой" id="filter-shark" checked>
-                  <label class="form__label form__label--checkbox" for="filter-shark">Сделал селфи с акулой</label>
-                </li>
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="chack" id="filter-chack">
-                  <label class="form__label form__label--checkbox" for="filter-chack">Видел Чака Норриса</label>
-                </li>
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Удержал башню" id="filter-tower" checked>
-                  <label class="form__label form__label--checkbox" for="filter-tower">Удержал башню</label>
-                </li>
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="beach" id="filter-beach" checked>
-                  <label class="form__label form__label--checkbox" for="filter-beach">Обгорел на пляже</label>
-                </li>
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Накупил сувениров" id="filter-souvenirs">
-                  <label class="form__label form__label--checkbox" for="filter-souvenirs">Накупил сувениров</label>
-                </li>
-                <li class="form__option form__option--checkbox">
-                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="Разгромил отель" id="filter-hotel">
-                  <label class="form__label form__label--checkbox" for="filter-hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-
             <fieldset class="form__fieldset form__fieldset--data">
               <legend class="form__legend form__legend--data">Контактная информация</legend>
               <ul class="form__list form__list--data">

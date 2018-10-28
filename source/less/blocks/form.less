@@ -82,16 +82,23 @@
   margin: 0;
   padding: 0;
 }
-
+.form__fieldset--desktop {
+  display: none;
+}
 .form__fieldset--radio {
   background-color: @light-gray;
+  padding-bottom: 45px;
 }
 
 .form__fieldset--checkbox {
   background-color: @light-gray;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  padding-bottom: 41px;
 }
 
+.form__fieldset--emotions {
+  margin-bottom: 40px;
+}
 @media (min-width: @tablet) {
   .form__fieldset {
     border: 2px solid #e5e5e5;
@@ -116,6 +123,7 @@
   .form__fieldset--checkbox {
     background-color: @global-white;
     order: 4;
+    padding-bottom: 49px;
   }
 
   .form__fieldset--emotions {
@@ -161,16 +169,35 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  padding-top: 40px;
+  position: relative;
+  top: 56px;
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  margin-bottom: 73px;
 }
 
 .form__legend--data {
   display: none;
 }
 
+.form__legend--radio {
+  margin-bottom: 68px;
+}
+
+.form__legend--emotions {
+  margin-bottom: 5px;
+  top: 18px;
+  right: 4px;
+}
+
 @media (min-width: @tablet) {
   .form__legend {
     padding: 0 25px;
+    position: inherit;
+    width: auto;
+    margin: 0;
   }
 
   .form__legend--data {
@@ -187,6 +214,13 @@
   flex-wrap: wrap;
 }
 
+.form__list--checkbox {
+  margin-bottom: 54px;
+}
+.form__list--checkbox:last-child {
+  margin-bottom: 2px;
+}
+
 @media (min-width: @tablet) {
   .form__list {
     width: 620px;
@@ -196,19 +230,24 @@
 
   .form__list--radio {
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 15px;
   }
 
   .form__list--data {
     padding-top: 10px;
-    padding-bottom: 28px;
+    padding-bottom: 16px;
+  }
+
+  .form__fieldset--wrapper {
+    width: 558px;
+    padding-right: 60px;
+    margin-bottom: 0;
+    padding-top: 49px;
   }
 
   .form__list--checkbox {
-    width: 558px;
-    padding-right: 60px;
-    padding-top: 49px;
-    padding-bottom: 50px;
+    justify-content: space-between;
+    margin-bottom: 55px;
   }
 }
 
@@ -262,6 +301,18 @@
   margin-bottom: 0;
 }
 
+.form__option--checkbox {
+  margin: 0;
+}
+.form__option--checkbox:first-child {
+  margin-bottom: 50px;
+}
+
+.form__option--radio {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
 @media (min-width: @tablet) {
   .form__option {
     width: 620px;
@@ -282,6 +333,10 @@
     flex-direction: column;
     margin-bottom: 0;
     position: relative;
+  }
+
+  .form__option--data:last-child {
+    padding-top: 20px;
   }
 
   .form__option--data::before {
@@ -318,7 +373,10 @@
 
   .form__option--checkbox {
     margin: 0;
-    margin-bottom: 52px;
+  }
+
+  .form__option--checkbox:first-child {
+    margin-bottom: 50px;
   }
 }
 
@@ -385,9 +443,23 @@
   margin: 0;
 }
 
-.form__option--checkbox label,
+.form__option--checkbox label {
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 0;
+}
+
 .form__option--radio label {
   padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 0;
+}
+
+.form__option--data label {
+  padding-left: 22px;
+  padding-bottom: 9px;
 }
 
 @media (min-width: @tablet) {
@@ -456,9 +528,9 @@
   content: "";
   position: absolute;
   top: -5px;
-  left: 56px;
-  width: 37px;
-  height: 37px;
+  left: -20px;
+  width: 36px;
+  height: 36px;
   background-color: @global-white;
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -468,16 +540,16 @@
   position: absolute;
   width: 22px;
   height: 16px;
-  left: 68px;
-  top: 7px;
+  left: -11px;
+  top: 6px;
   background: url("../img/icon-yes(red).svg") no-repeat;
 }
 
 .form__input--radio + label::before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: 57px;
+  left: -1px;
+  top: -5px;
   width: 37px;
   height: 37px;
   background-color: @global-white;
@@ -490,10 +562,31 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 70px;
-  top: 7px;
+  left: 11px;
+  top: 8px;
   background-color: @light-red;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet) {
+  .form__input--checkbox + label::before {
+    top: -3px;
+    left: 58px;
+  }
+
+  .form__input--checkbox:checked + label::after {
+    left: 67px;
+    top: 8px;
+  }
+
+  .form__input--radio + label::before {
+    left: 57px;
+    top: -8px;
+  }
+  .form__input--radio:checked + label::after {
+    left: 69px;
+    top: 5px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -529,7 +622,7 @@
 }
 
 .form__input--name {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
 }
 
@@ -546,7 +639,7 @@
 }
 
 .form__input--data {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 30px;
 }
 
@@ -569,24 +662,31 @@
 }
 
 .form__textarea {
-  width: 320px;
-  min-height: 200px;
+  width: 250px;
+  margin-left: 19px;
+  padding: 0 15px;
+  min-height: 183px;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 15px;
+  line-height: 30px;
 }
 
 @media (min-width: @tablet) {
   .form__textarea {
-    width: 500px;
-    min-height: 110px;
-    padding-bottom: 79px;
+    width: 472px;
+    min-height: 44px;
+    padding-bottom: 114px;
     margin-left: 55px;
+    margin-right: 57px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     text-align: center;
-    font-size: 14px;
+    font-size: 19px;
   }
 }
 
-@media (min-width: @tablet) {
+@media (min-width: @desktop) {
   .form__textarea {
     width: 817px;
     min-height: 44px;
@@ -599,16 +699,24 @@
   }
 }
 
+.form__submit {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 53px;
+}
+
 .form__note {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 400;
+  text-align: center;
 }
 
 .form__button {
   display: inline-block;
-  padding: 15px 49px;
+  padding: 15px 48px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -618,7 +726,7 @@
   background-color: @light-salat;
   border: none;
   border-radius: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-weight: bold;
 }
 
@@ -639,17 +747,20 @@
   display: none;
 }
 
+
 @media (min-width: @tablet) {
   .form__submit {
-    width: 620px;
+    width: 660px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 43px;
+    padding: 0;
   }
 
   .form__note {
-    padding-top: 15px;
+    padding-top: 16px;
+    margin-right: 41px;
   }
 
   .form__button {
