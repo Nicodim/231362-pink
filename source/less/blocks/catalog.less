@@ -84,9 +84,9 @@
 @media (min-width: @desktop) {
   .catalog__slogan--inner {
     width: 595px;
-    padding-bottom: 89px;
+    padding-bottom: 86px;
     padding-right: 88px;
-    padding-top: 93px;
+    padding-top: 87px;
   }
 }
 
@@ -297,7 +297,7 @@
   text-transform: uppercase;
 }
 
-.user-photo__like-btn {
+.catalog__photo-like {
   position: relative;
   font-size: 12px;
   line-height: 24px;
@@ -308,7 +308,7 @@
   padding: 0;
   padding-left: 6px;
 }
-.user-photo__like-btn::before {
+.catalog__photo-like::before {
   content: " ";
   position: absolute;
   display: block;
@@ -319,7 +319,7 @@
   right: 87px;
 }
 
-.user-photo__like-count {
+.catalog__photo-count {
   font-size: 12px;
   line-height: 24px;
   color: @light-red;
@@ -335,6 +335,7 @@
     height: 20px;
     margin-left: 7px;
   }
+
   .catalog__item--panorama .catalog__text {
     margin-left: 8px;
     order: 3;
@@ -349,20 +350,20 @@
     padding-right: 20px;
   }
 
-  .catalog__item--panorama .user-photo__like-btn {
+  .catalog__item--panorama .catalog__photo-like {
     padding-left: 11px;
   }
 
-  .catalog__item--panorama .user-photo__like-btn::before {
+  .catalog__item--panorama .catalog__photo-like::before {
     top: 5px;
     right: -51px;
   }
 
-  .user-photo__like-btn {
+  .catalog__photo-like {
     padding: 0;
   }
 
-  .user-photo__like-btn::before {
+  .catalog__photo-like::before {
     top: 5px;
     right: -172px;
   }
@@ -373,7 +374,7 @@
     padding-bottom: 21px;
   }
 
-  .user-photo__like-btn {
+  .catalog__photo-like {
     padding: 0;
   }
 }

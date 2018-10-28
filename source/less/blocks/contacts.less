@@ -110,6 +110,11 @@
     height: 372px;
     background-image: url(../img/bg-map-tablet@1x.jpg);
     background-position: center -348px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+     background-image: url("../img/bg-map-tablet@2x.jpg");
+     background-size: cover;
+   }
   }
 
   .contacts__map::before {
@@ -174,6 +179,11 @@
     height: 500px;
     background-image: url(../img/bg-map-desktop@1x.jpg);
     background-position: center -259px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+     background-image: url("../img/bg-map-desktop@2x.jpg");
+     background-size: cover;
+   }
   }
 }
 

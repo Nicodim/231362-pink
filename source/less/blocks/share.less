@@ -139,13 +139,15 @@
 .share__tool-item:first-child {
   padding-top: 22px;
 }
+
   .share__range-controls {
-    width: 300px;
+    width: 202px;
     margin-bottom: 34px;
     margin-top: 34px;
     margin-right: 18px;
   }
 }
+
 @media (min-width: @desktop) {
   .share__column--img {
     margin-left: 21px;
@@ -165,31 +167,31 @@
   }
 
   .share__range-controls {
-    width: 300px;
+    width: 290px;
     margin-bottom: 34px;
     margin-top: 34px;
     margin-right: 29px;
   }
 }
-.share__button--wrapper {
+.share__button-wrapper {
   padding: 0 20px;
   padding-bottom: 40px;
 }
 @media (min-width: @tablet) {
-  .share__button--wrapper {
+  .share__button-wrapper {
     padding: 0 10px;
-    margin-top: auto;
+    margin-top: 30px;
     width: 260px;
     margin-left: 18px;
   }
 }
 @media (min-width: @desktop) {
-  .share__button--wrapper {
+  .share__button-wrapper {
     width: 410px;
     display: flex;
     justify-content: space-between;
     padding: 0px 2px;
-    padding-bottom: 46px;
+    padding-bottom: 56px;
     margin-left: 0;
   }
 }
@@ -246,8 +248,8 @@
 
 .share__scale::after {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   padding: 0;
   position: absolute;
   top: -8px;
@@ -290,6 +292,7 @@
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
+
 .share__button--active {
   display: inline-block;
   box-sizing: border-box;
@@ -310,6 +313,21 @@
 }
 
 @media (min-width: @tablet) {
+  .share__scale--crop::after {
+    top: -8px;
+    left: 148px;
+  }
+
+  .share__scale--fill::after {
+    top: -6px;
+    left: 25px;
+  }
+
+  .share__scale--light::after {
+    top: -6px;
+    left: 95px;
+  }
+
   .share__tool-button-svg {
     width: 28px;
     height: 28px;
@@ -322,6 +340,21 @@
 }
 
 @media (min-width: @desktop) {
+  .share__scale--crop::after {
+    top: -8px;
+    left: 71px;
+  }
+
+  .share__scale--fill::after {
+    top: -6px;
+    left: 247px;
+  }
+
+  .share__scale--light::after {
+    top: -6px;
+    left: 160px;
+  }
+
   .share__tool-button {
     padding: 0;
   }
@@ -337,7 +370,7 @@
 
   .share__button--active,
   .share__button--cansel {
-    margin-top: 140px;
+    margin-top: 102px;
     width: 183px;
   }
 
