@@ -137,15 +137,6 @@
     margin-bottom: 57px;
   }
 
-  .form__fieldset--checkbox {
-    display: none;
-  }
-
-  .form__fieldset--desktop {
-    display: block;
-    margin-bottom: 60px;
-  }
-
   .form__fieldset--emotions {
     width: 100%;
     margin-bottom: 60px;
@@ -158,6 +149,9 @@
 
   .form__fieldset--radio {
     width: 420px;
+  }
+  .form__fieldset--checkbox {
+    padding: 0;
   }
 }
 
@@ -252,6 +246,15 @@
 }
 
 @media (min-width: @desktop) {
+  .form__fieldset--wrapper {
+    width: 900px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .form__list {
     width: 940px;
   }
@@ -276,10 +279,7 @@
   }
 
   .form__list--checkbox {
-    width: 820px;
-    padding: 55px 60px;
-    padding-bottom: 7px;
-    padding-top: 49px;
+    width: 260px;
   }
 
   .form__list--data {
@@ -288,6 +288,10 @@
     padding-bottom: 12px;
     padding-left: 59px;
     padding-right: 59px;
+  }
+
+  .form__list--checkbox:last-child {
+    margin: 0;
   }
 }
 
@@ -352,19 +356,24 @@
   .form__option--phone::after {
     content: "";
     position: absolute;
-    top: 52px;
-    right: 81px;
+    top: 47px;
+    right: 84px;
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
   }
 
+  .form__option--data:last-child::before  {
+    top: 21px;
+    right: 60px;
+  }
+
   .form__option--mail::after {
     content: "";
     position: absolute;
-    top: 52px;
-    right: 81px;
+    top: 42px;
+    right: 83px;
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-mail.svg");
