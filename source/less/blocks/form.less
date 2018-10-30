@@ -95,7 +95,7 @@
 .form__fieldset--checkbox {
   background-color: @light-gray;
   margin-bottom: 32px;
-  padding-bottom: 41px;
+  padding-bottom: 46px;
 }
 
 .form__fieldset--emotions {
@@ -184,6 +184,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 68px;
+  top: 59px;
 }
 
 .form__legend--emotions {
@@ -316,6 +317,14 @@
   margin-bottom: 0;
 }
 
+.form__option--name {
+  margin-bottom: 17px;
+}
+
+.form__option--data {
+  margin-bottom: 19px;
+}
+
 .form__option--checkbox {
   margin: 0;
 }
@@ -361,7 +370,7 @@
     top: 29px;
     right: 60px;
     width: 63px;
-    height: 58px;
+    height: 55px;
     background-color: @light-gray;
   }
 
@@ -376,7 +385,7 @@
     background-repeat: no-repeat;
   }
 
-  .form__option--data:last-child::before  {
+  .form__option--data:last-child::before {
     top: 21px;
     right: 60px;
   }
@@ -421,8 +430,8 @@
   }
 
   .form__option--data:last-child::before {
-    top: 28px;
-    right: -2px;
+    top: 31px;
+    right: 2px;
   }
 
   .form__option--checkbox {
@@ -436,7 +445,8 @@
   }
 
   .form__option--data::before {
-    right: 0;
+    right: 2px;
+    top: 31px;
   }
 
   .form__option--phone::after {
@@ -473,8 +483,13 @@
   margin: 0;
 }
 
+.form__option--name label  {
+  padding-left: 22px;
+  padding-bottom: 8px;
+}
+
 .form__option--checkbox label {
-  padding-left: 50px;
+  padding-left: 69px;
   font-size: 18px;
   line-height: 30px;
   padding-bottom: 0;
@@ -489,7 +504,7 @@
 
 .form__option--data label {
   padding-left: 22px;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
 }
 
 @media (min-width: @tablet) {
@@ -570,8 +585,8 @@
 .form__input--checkbox + label::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -20px;
+  top: -4px;
+  left: -1px;
   width: 36px;
   height: 36px;
   background-color: @global-white;
@@ -591,8 +606,8 @@
   position: absolute;
   width: 22px;
   height: 16px;
-  left: -11px;
-  top: 6px;
+  left: 9px;
+  top: 8px;
   background: url("../img/icon-yes(red).svg") no-repeat;
 }
 
@@ -679,8 +694,8 @@
   }
 
   .form__input--checkbox:checked + label::after {
-    left: -48px;
-    top: 6px;
+    left: -52px;
+    top: 7px;
   }
 }
 
@@ -699,6 +714,8 @@
 .form__legend--checkbox {
   font-size: 14px;
   line-height: 18px;
+  padding-top: 24px;
+  padding-bottom: 27px;
 }
 
 .form__label--data {
@@ -718,8 +735,6 @@
     order: 2;
   }
 }
-
-
 
 .form__label--emotions {
   font-size: 14px;
