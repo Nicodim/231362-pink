@@ -55,13 +55,19 @@
 }
 
 @media (max-width: @mobile-only) {
-  .offer__img-container {
+  .offer__version::before {
+    content: "";
+    display: block;
     min-height: 460px;
     min-width: 320px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 258px 286px, cover;
-    background-position: bottom left, center;
+    background-size: 257px 285px, cover;
+    background-position: 0 bottom, center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 
   .offer__title {
