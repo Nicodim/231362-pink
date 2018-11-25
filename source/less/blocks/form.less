@@ -432,7 +432,7 @@
 
   .form__option--data:last-child::before {
     top: 30px;
-    right: 2px;
+    right: 3px;
   }
 
   .form__option--checkbox {
@@ -502,6 +502,7 @@
   font-size: 18px;
   line-height: 30px;
   padding-bottom: 0;
+  transition: 0.6s;
 }
 
 .form__option--data label {
@@ -560,6 +561,7 @@
   padding-left: 20px;
   padding-right: 15px;
   padding-bottom: 14px;
+  transition: 0.6s;
 }
 
 @media (min-width: @tablet) {
@@ -577,6 +579,7 @@
 
 .form__input:hover {
   border: 2px solid @total-black;
+  transition: 0.2s;
 }
 
 .form__input:active {
@@ -593,10 +596,12 @@
   height: 36px;
   background-color: @global-white;
   border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: 0.6s;
 }
 
 .form__input--checkbox:hover + label::before {
   border: 2px solid @total-black;
+  transition: 0.2s;
 }
 
 .form__input--checkbox:active + label::before {
@@ -623,10 +628,12 @@
   background-color: @global-white;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: 0.6s;
 }
 
 .form__input--radio:hover + label::before {
   border: 2px solid @total-black;
+  transition: 0.2s;
 }
 
 .form__input--radio:active + label::before {
